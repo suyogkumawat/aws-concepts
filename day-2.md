@@ -1,6 +1,3 @@
-# Database Overview
-
-This document provides a brief overview of different types of databases, their common uses, and some popular cloud-based database services with their free tier offerings.
 
 ## Types of Databases
 
@@ -25,13 +22,7 @@ Databases are fundamental for modern applications due to several key benefits:
 * **Concurrency Control:** Databases manage simultaneous access by multiple users or applications, preventing data corruption.
 * **Scalability:** Many database systems are designed to scale horizontally or vertically to handle increasing data volumes and user traffic.
 
-## Case Studies: Cloud-Based Database Services
-
-Here are some popular managed database services offered by Amazon Web Services (AWS), along with details on their free tier offerings:
-
 ### <ins>Amazon RDS</ins>
-
-[![AWS RDS Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Amazon_RDS_logo.svg/256px-Amazon_RDS_logo.svg.png)](https://aws.amazon.com/rds/)
 
 AWS RDS is a managed **relational database** service supporting various engines like MySQL, PostgreSQL, MariaDB, Oracle BYOL, and SQL Server. It simplifies database setup, operation, and scaling in the cloud.
 
@@ -44,8 +35,6 @@ AWS RDS is a managed **relational database** service supporting various engines 
 ---
 
 ### <ins>DynamoDB</ins>
-
-[![DynamoDB Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Amazon_DynamoDB_logo.svg/256px-Amazon_DynamoDB_logo.svg.png)](https://aws.amazon.com/dynamodb/)
 
 DynamoDB is a fully managed, serverless **NoSQL database** designed for applications requiring high performance and scalability at any level. It's a key-value and document database.
 
@@ -60,8 +49,6 @@ DynamoDB is a fully managed, serverless **NoSQL database** designed for applicat
 
 ### <ins>Redshift</ins>
 
-[![Amazon Redshift Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Amazon_Redshift_logo.svg/256px-Amazon_Redshift_logo.svg.png)](https://aws.amazon.com/redshift/)
-
 Redshift is a fast, simple, and cost-effective **data warehousing** service for analyzing large datasets using SQL.
 
 ⏱️ **2-MONTH FREE TRIAL**
@@ -71,8 +58,6 @@ Redshift is a fast, simple, and cost-effective **data warehousing** service for 
 ---
 
 ### <ins>Database Migration Service</ins>
-
-[![AWS Database Migration Service Logo](https://d1.awsstatic.com/product-marketing/DMS/dms-logo.64c29a7731e06a2303d177c9f7a70c3097074048.png)](https://aws.amazon.com/dms/)
 
 AWS Database Migration Service (DMS) enables you to migrate databases to AWS easily and securely with minimal downtime.
 
