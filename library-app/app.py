@@ -5,7 +5,15 @@ import os
 # Create a Flask application instance
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return "<h1>Hello, LibTrack!</h1>"  # Directly returning HTML
 
+@app.route('/books')
+def list_books():
+    # In a real application, you'd fetch books from the database here
+    books = ["Book 1", "Book 2", "Book 3"]
+    return render_template('books.html', book_list=books) # Rendering an HTML template
 
 # Configure the database URI (Uniform Resource Identifier)
 # For SQLite, this specifies the path to the database file.
