@@ -14,8 +14,6 @@ AWS provides a comprehensive suite of storage services tailored for various need
 
 ## <ins>Amazon S3 (Simple Storage Service)</ins>
 
-[![Amazon S3 Logo](https://upload.wikimedia.org/wikipedia/commons/6/64/Amazon_S3_logo.svg)](https://aws.amazon.com/s3/)
-
 S3 is an object storage service offering industry-leading scalability, data availability, security, and performance. It can be used to store and retrieve any amount of data at any time, from anywhere on the web.
 
 **Key Characteristics:**
@@ -113,8 +111,6 @@ The AWS Command Line Interface (CLI) offers a powerful way to interact with S3 a
 ---
 
 ## <ins>AWS Storage Gateway</ins>
-
-[![AWS Storage Gateway Logo](https://d1.awsstatic.com/product-marketing/Storage%20Gateway/AWS_Storage_Gateway_Horizontal_Color_RGB.svg)](https://aws.amazon.com/storagegateway/)
 
 AWS Storage Gateway is a hybrid cloud storage service that enables your on-premises applications to seamlessly use AWS cloud storage. It provides low-latency performance by caching frequently accessed data on-premises while storing all your data securely and durably in the AWS cloud.
 
