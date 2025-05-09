@@ -1,0 +1,66 @@
+AWS offers a variety of storage services, each designed to meet different use cases and requirements.
+
+Different types of AWS storage services:
+- Object Storage (S3, Glacier)
+- Block Storage (EBS)
+- File Storage (EFS)
+- Hybrid (Storage Gateway)
+- Physical Data Transfer (Snowball)
+
+  
+  S3: Simple Storage Service – Object storage for any type of data.
+Key Characteristics:
+- Stores data as objects inside buckets
+- 11 9's Durability (99.999999999%)
+- Access via Console, CLI, SDKs, REST API
+Use Cases: Static website hosting, Backup and restore, Data lake and analytics
+
+  
+Steps:
+1. Navigate to S3 in AWS Console
+2. Click on "Create bucket"
+3. Provide a globally unique bucket name
+4. Choose AWS Region (e.g., us-east-1)
+5. Configure options: Versioning, Logging, Encryption
+6. Set permissions (IAM, ACL, Block Public Access)
+Real-world Example: Project X stores daily reports in `projectx-reports-2025` bucket.
+
+
+S3 offers several storage classes:
+•	Standard: For frequently accessed data.
+•	Intelligent-Tiering: Automatically moves data between two access tiers based on changing access patterns.
+•	One Zone-IA: For infrequently accessed data that does not require multiple availability zone resilience.
+•	Glacier: For long-term archival storage.
+•	Glacier Deep Archive: The lowest-cost storage class for rarely accessed data.
+
+Data in S3 can be secured using:
+•	IAM Policies: Control access at the user level.
+•	Bucket Policies: Control access at the bucket level.
+•	Encryption: Use server-side encryption (SSE) or client-side encryption to protect data at rest.
+•	Access Logging: Enable logging to track access requests.
+
+Versioning in S3 allows you to keep multiple versions of an object in the same bucket. 
+It is useful for recovering from accidental deletions or overwrites, as you can restore a previous version of an object.
+
+CLI Benefits: Automation, integration, speed
+Setup: Install AWS CLI and configure using `aws configure`
+Commands:
+- `aws s3 ls`
+- `aws s3 cp file.txt s3://mybucket/`
+- `aws s3 sync ./data s3://mybucket/backup`
+Example: Scheduled script to upload logs to S3 every night
+
+Use Storage Gateway when you need to connect on-premises applications to cloud storage, enabling seamless integration between local and cloud storage.
+Definition: Connect on-prem environments to cloud storage
+Types:
+- File Gateway: NFS/SMB to S3
+- Volume Gateway: iSCSI-based block storage
+- Tape Gateway: Replaces physical tape with virtual tapes
+Real-world Use Case: Backup on-prem ERP system files to S3
+
+Best Practises:
+- Use bucket policies and IAM roles for access control
+- Enable versioning and MFA delete
+- Encrypt data using SSE-S3 or SSE-KMS
+- Monitor access logs and S3 metrics via CloudWatch
+- Set lifecycle rules for automated cost optimization
