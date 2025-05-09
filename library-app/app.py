@@ -28,6 +28,19 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # Define your database models here
+class Book(db.Model):
+    BookID = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    Title = db.Column(db.Text, nullable=False)
+    Author = db.Column(db.Text, nullable=False)
+    ISBN = db.Column(db.Text, unique=True, nullable=False)
+    Genre = db.Column(db.Text)
+    PublicationYear = db.Column(db.Integer)
+    TotalCopies = db.Column(db.Integer, nullable=False, default=1)
+    AvailableCopies = db.Column(db.Integer, nullable=False, default=1)
+    DateAdded = db.Column(db.DateTime, default=db.func.current_timestamp())
+
+    def __repr__(self):
+        return f"<Book {self.Title}>"
 
 # Run the application if this script is executed directly
 if __name__ == '__main__':
