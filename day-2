@@ -1,0 +1,47 @@
+Database-
+
+Type of Database-
+
+Why database used ?
+
+Case studies-
+
+##Amazon RDS 
+  AWS RDS is a managed relational database service for MySQL, PostgreSQL, MariaDB, Oracle BYOL, or SQL Server.
+
+  12 MONTHS FREE
+
+750 hours per month of db.t2.micro, db.t3.micro, and db.t4g.micro Single-AZ instance usage (applicable database engines)
+
+20 GB of General Purpose SSD (gp2) storage
+
+20 GB of storage for database backups and database snapshots
+
+
+##Dynamo DB:
+A serverless database for applications that need high performance at any scale.
+  ALWAYS FREE
+
+25 GB of storage
+
+25 units of write capacity
+
+25 units of read capacity
+
+Enough to handle up to 200 million requests per month
+
+##Redshift:
+Fast, simple, cost-effective data warehousing.
+
+  2-MONTH FREE TRIAL
+
+750 DC2.Large node hours per month
+
+##Database Migration Service:
+Migrate databases with minimal downtime.
+
+  ALWAYS FREE
+
+750 hours of Amazon DMS single Availability Zone dms.t2.micro instance usage
+
+50 GB of included general purpose (SSD) storage
