@@ -1,6 +1,6 @@
 # 🚀 AWS DevOps Roadmap
 
-A comprehensive, step-by-step guide to mastering AWS DevOps, based on the [AWS-DevOps-Syllabus.pdf](#) and industry best practices. This roadmap is ideal for beginners and professionals aiming to become AWS DevOps Engineers.
+A comprehensive, step-by-step guide to mastering AWS DevOps. This roadmap is ideal for beginners aiming to become AWS DevOps Engineers.
 
 ---
 
