@@ -60,6 +60,7 @@ Redshift is a fast, simple, and cost-effective **data warehousing** service for 
 ### <ins>Database Migration Service</ins>
 
 AWS Database Migration Service (DMS) enables you to migrate databases to AWS easily and securely with minimal downtime.
+AWS Database Migration Service (AWS DMS) helps you plan, assess, convert, and migrate databases and analytic workloads to AWS simply, securely, and at low cost. With AWS DMS, you can choose to use either on-demand instances or go serverless. AWS Database Migration Service (AWS DMS) Serverless automatically provisions and manages capacity.
 
 🆓 **ALWAYS FREE TIER**
 
