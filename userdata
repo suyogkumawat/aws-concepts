@@ -1,0 +1,18 @@
+#!/bin/bash
+# Update system packages
+sudo yum update -y
+
+# Install Apache HTTP Server
+sudo yum install -y httpd
+
+# Start and enable Apache service
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+# Create a basic web page (optional)
+echo "<!DOCTYPE html><html><head><title>My Webpage</title></head><body><h1>Hello, World! Machine $(hostname)! </h1></body></html>" > /var/www/html/index.html
+
+# Set appropriate permissions for the web directory (optional, but recommended)
+chown -R apache:apache /var/www/
+chmod 755 /var/www/
+chmod 644 /var/www/html/index.html
