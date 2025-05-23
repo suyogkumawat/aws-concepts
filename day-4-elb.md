@@ -1,3 +1,12 @@
+Load balancer is a device or cloud based service or software application that distributes network traffic across multiple servers. It acts as a central point of contact for users, ensuring that all servers in a pool are utilized effectively and that no single server gets overloaded. By spreading the workload, load balancers improve application performance, reliability, and availability. 
+
+Flow of LB:
+
+1--> A user sends a request to the load balancer. 
+2--> The load balancer determines which server is best suited to handle the request based on various factors, such as server health, load, and geographic location. 
+3--> The load balancer forwards the request to the chosen server. 
+4--> The server processes the request and sends a response back to the user through the load balancer. 
+
 ## What is ELB (Elastic Load Balancing)?
 
 Elastic Load Balancing (ELB) is a cloud-based service provided by AWS that automatically distributes incoming application or network traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions, within one or more Availability Zones. ELB is designed to improve the availability, scalability, and fault tolerance of your applications by ensuring that no single resource becomes overwhelmed with traffic.
