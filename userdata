@@ -10,7 +10,7 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 
 # Create a basic web page (optional)
-echo "<!DOCTYPE html><html><head><title>My Webpage</title></head><body><h1>Hello, World! Machine $(hostname)! </h1></body></html>" > /var/www/html/index.html
+echo "<!DOCTYPE html><html><head><title>My Webpage</title></head><body><h1>Today Practical with Load Balancer- It distributed its load to $(hostname)! </h1></body></html>" > /var/www/html/index.html
 
 # Set appropriate permissions for the web directory (optional, but recommended)
 chown -R apache:apache /var/www/
