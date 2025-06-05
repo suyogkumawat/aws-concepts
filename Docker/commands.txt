@@ -1,3 +1,27 @@
+Update the installed packages and package cache on your instance.
+
+
+$ sudo yum update -y
+Install the most recent Docker Community Edition package.
+
+For Amazon Linux 2, run the following:
+
+
+$ sudo amazon-linux-extras install docker
+For Amazon Linux 2023, run the following:
+
+
+$ sudo yum install -y docker
+Start the Docker service.
+
+
+$ sudo service docker start
+Add the ec2-user to the docker group so that you can run Docker commands without using sudo.
+
+
+$ sudo usermod -a -G docker ec2-user
+
+
 docker build -t getting-started .
 
 docker run -d -p 127.0.0.1:3000:3000 getting-started
