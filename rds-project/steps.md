@@ -42,6 +42,8 @@ docker run --rm -p 80:3000 -e DB_HOST="database-1.rds.amazonaws.com" -e DB_USER=
 ```
 ### Our Node App is ready Simply copy the Public IP and use port 80 to see your website
 
+![Contact App](nodeapp-UI.png)
+
 ### Now if you want to verify in the database by running the sql queries to fetch the entries
 ```bash
 #comments for documentaion
