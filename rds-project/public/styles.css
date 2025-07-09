@@ -1,0 +1,110 @@
+/* public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Transparent background */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+input,
+button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+button {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ee0979, #ff6a00);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Additional styling for delete button */
+button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+ul li button {
+    background-color: #e74c3c;
+    /* Red color for delete button */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ul li button:hover {
+    background-color: #c0392b;
+}
+
+/* public/styles.css */
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 0;
+
+    backdrop-filter: blur(5px);
+    font-weight: bold;
+}
